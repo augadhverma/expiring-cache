@@ -1,4 +1,5 @@
 # expiring-cache
+
 A simple Python dict with TTL support for auto-expiring caches with support for case-insensitive keys.
 
 ## Installation
@@ -34,7 +35,7 @@ Example 2: (shows case-insensitive feature)
 import time
 from cache import ExpiringCache
 
-cache = ExpiringCache(2)
+cache = ExpiringCache(2, case_insensitive=True)
 
 cache['ABC'] = 'Example value'
 print(cache['ABC'])
